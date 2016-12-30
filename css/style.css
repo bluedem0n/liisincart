@@ -1308,9 +1308,11 @@ nav.nav-sidebar {
 /*--login--*/
 
 .login {
+    padding: 8em 0 0;
+}
+.register{
     padding: 5em 0 0;
 }
-
 .login-bottom h2 {
     font-size: 1.4em;
     color: #000;
@@ -1426,6 +1428,7 @@ nav.nav-sidebar {
     font-size: 1.5em;
     color: #000000;
     font-family: 'Ubuntu-Regular';
+    text-align: left;
 }
 
 .login-right p {
@@ -2058,7 +2061,7 @@ ul.tag-in li a:hover {
 @media(max-width:768px) {
 }
 
-@media(max-width:767px) {
+@media(max-width:991px) {
     .logo2 img {
         display: none;
     }
@@ -2151,6 +2154,9 @@ ul.tag-in li a:hover {
     }
     .login {
         padding: 4em 0 0;
+    }
+    .register {
+        padding: 9em 0 0;
     }
 }
 
