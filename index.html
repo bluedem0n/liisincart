@@ -12,13 +12,14 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="css/jstarbox.css" type="text/css" media="screen" charset="utf-8" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" media="screen">
     <!--- Light Box ---->
     <link rel="stylesheet" href="css/chocolat.css" type="text/css" media="screen" charset="utf-8">
 </head>
 
 <body>
     <!--header-->
-    <div class="header">
+    <div class="header" id="home">
         <div class="container">
             <div class="head">
                 <div class="logo">
@@ -74,9 +75,12 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li><a class="color3" href="product.html">Sale</a></li>
-                                <a href="login.html" type="button" class="btn btn-primary btn-navbar">Iniciar Sesión</a>
-                                <a href="register.html" type="button" class="btn btn-primary btn-navbar btn-open">Abrir Cuenta</a> </ul>
+                                <li><a class="color3" href="product.html">Catálogo</a></li>
+                                <a href="login.html" type="button" class="btn btn-primary btn-navbar ml1">Iniciar Sesión</a>
+                                <a href="register.html" type="button" class="btn btn-primary btn-navbar btn-open">Abrir Cuenta</a> 
+                                <li><a class="color4 ocultar" href="404.html">Iniciar Sesión</a></li>
+                                <li><a class="color5 ocultar" href="404.html">Abrir Cuenta</a></li>
+                                </ul>
                         </div>
                         <!-- /.navbar-collapse -->
                     </nav>
@@ -99,7 +103,12 @@
         </div>
     </div>
     <!--banner-->
-    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="2000" id="bs-carousel">
+    <div class="hero-movil">
+        <h2 class="hero-mtxt">En la organización de tu fiesta, <br> 
+                    Liisin es tu mejor aliado</h2> 
+        <a type="button" class="btn btn-primary btn-liisin">Abrir una cuenta ahora</a>
+    </div>
+    <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="3000" id="bs-carousel">
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item slides active">
@@ -107,23 +116,23 @@
                 <div class="hero">
                     <h2 class="hero-txt">En la organización de tu fiesta, <br> 
                     Liisin es tu mejor aliado</h2> 
-                    <a type="button" class="btn btn-primary btn-navbar btn-liisin">Abrir una cuenta ahora</a>
+                    <a href="register.html" type="button" class="btn btn-primary btn-navbar btn-liisin">Abrir una cuenta ahora</a>
                  </div>
             </div>
             <div class="item slides">
                 <div class="slide-2"></div>
                 <div class="hero">
-                    <h2 class="hero-txt">En la organización de tu fiesta, <br> 
-                    Liisin es tu mejor aliado de bolsillo</h2> 
-                    <a type="button" class="btn btn-primary btn-navbar btn-liisin">Abrir una cuenta ahora</a>
+                   <h2 class="hero-txt">En la organización de tu fiesta, <br> 
+                    Liisin es tu mejor aliado</h2> 
+                    <a href="register.html" type="button" class="btn btn-primary btn-navbar btn-liisin">Abrir una cuenta ahora</a>
                 </div>
             </div>
             <div class="item slides">
                 <div class="slide-3"></div>
                 <div class="hero">
                     <h2 class="hero-txt">En la organización de tu fiesta, <br> 
-                    Liisin es tu mejor aliado de bolsillo</h2> 
-                    <a type="button" class="btn btn-primary btn-navbar btn-liisin">Abrir una cuenta ahora</a>
+                    Liisin es tu mejor aliado</h2> 
+                     <a href="register.html" type="button" class="btn btn-primary btn-navbar btn-liisin">Abrir una cuenta ahora</a>
                 </div>
             </div>
         </div>
@@ -168,7 +177,62 @@
             <!--productos-->
             <div class="content-mid">
                 <h3>Productos</h3>
-                <label class="line"></label>
+                <label class="line mb-3"></label>
+                <!--Filter-->
+                <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group" id="adv-search">
+                            <input type="text" class="form-control" placeholder="Buscar" />
+                            <div class="input-group-btn">
+                                <div class="btn-group" role="group">
+                                    <div class="dropdown dropdown-lg">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false"><span class="caret"></span></button>
+                                        <div class="dropdown-menu dropdown-menu-right" role="menu">
+                                            <form class="form-horizontal" role="form">
+                                              <div class="form-group">
+                                                <label for="filter">Por Estado</label>
+                                                <select class="form-control">
+                                                    <option value="0" selected>Todos</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="filter">Por Ciudad</label>
+                                                <select class="form-control">
+                                                    <option value="0" selected>Todos</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                              </div>
+                                              <div class="form-group">
+                                                <label for="filter">Por Servicio</label>
+                                                <select class="form-control">
+                                                    <option value="0" selected>Todos</option>
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                </select>
+                                              </div>
+                                              <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <!--//filter-->
+            </div>
                 <div class="mid-popular">
                     <div class="col-md-3 item-grid simpleCart_shelfItem">
                         <div class="mid-pop">
@@ -188,7 +252,7 @@
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
                                     <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -222,7 +286,7 @@
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
                                     <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -256,7 +320,7 @@
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
                                     <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -289,8 +353,8 @@
                                         <span>Categoría</span>
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
-                                    <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                   <div class="img item_add">
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -327,7 +391,7 @@
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
                                     <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -361,7 +425,7 @@
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
                                     <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -395,7 +459,7 @@
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
                                     <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -429,7 +493,7 @@
                                         <h6><a href="single.html">Nombre del Producto</a></h6>
                                     </div>
                                     <div class="img item_add">
-                                        <a href="#"><img src="images/ca.png" alt=""></a>
+                                        <a href="#"><img class="ca" src="images/ca.png" alt=""></a>
                                     </div>
                                     <div class="clearfix"></div>
                                 </div>
@@ -463,7 +527,7 @@
     <div class="abrir-cuenta">
           <h2 class="text-center">Reinventa tu forma de hacer Fiestas</h2>
           <div class="abrir-center">
-            <a type="button" class="btn btn-primary btn-navbar btn-liisin btn-abrir-cuenta">Abrir una cuenta ahora</a>
+            <a href="register.html" type="button" class="btn btn-primary btn-liisin btn-abrir-cuenta btn-movil">Abrir una cuenta ahora</a>
           </div>
         <div class="clearfix"></div>
     </div>
@@ -492,15 +556,17 @@
                     <div class="clearfix"></div>
                 </div>
                 <div class="col-md-3 footer-middle-in">
-                    <h6>Otros</h6>
+                    <h6>Redes Sociales</h6>
                     <ul class="tag-in">
-                        <li><a href="#">Lorem</a></li>
-                        <li><a href="#">Sed</a></li>
-                        <li><a href="#">Ipsum</a></li>
-                        <li><a href="#">Contrary</a></li>
-                        <li><a href="#">Chunk</a></li>
-                        <li><a href="#">Amet</a></li>
-                        <li><a href="#">Omnis</a></li>
+                        <a href="https://www.facebook.com/Liisin-626800804177581/" target='_blank'>
+						<span class="fa fa-facebook"></span>
+					</a>
+					<a href="https://twitter.com/Liisin_App" target='_blank'>
+						<span class="fa fa-twitter"></span>
+					</a>
+					<a href="https://www.instagram.com/liisin.app" target='_blank'>
+						<span class="fa fa-instagram"></span>
+					</a>
                     </ul>
                 </div>
                 <div class="col-md-3 footer-middle-in">
@@ -514,6 +580,9 @@
         </div>
     </div>
     <!--//footer-->
+    <!-- Scroll up -->
+	<div class="scroll-up"> <a href="#home"><i class="fa fa-angle-up"></i></a> </div>
+    <!-- //scroll up -->
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/simpleCart.min.js"></script>
@@ -521,6 +590,7 @@
     <script src="js/jquery.chocolat.js"></script>
      <!--Star Box-->
     <script src="js/jstarbox.js"></script>
+    <script src="js/smoothscroll.js"></script>
     <script src="js/main.js"></script>
     <script>
    /*Light Box Init */
