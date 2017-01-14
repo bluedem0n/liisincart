@@ -1856,12 +1856,27 @@ ul.tag-in li a:hover {
 }
 
 @media(max-width:1280px) {
+    .beneficios{
+        height: 100%;
+    }
     .navbar-nav > li > .mega-dropdown-menu {
         left: -130%;
+    }
+    .img-funciona{
+        width: 100%
     }
 }
 
 @media(max-width:1220px) {
+    .beneficios{
+        height: 100%;
+    }
+    .funciona{
+        height: 100%;
+    }
+    .img-funciona{
+        width: 100%
+    }
     .logo2 img {
         display: none;
     }
@@ -1915,6 +1930,9 @@ ul.tag-in li a:hover {
 }
 
 @media(max-width:1000px) {
+    .img-funciona{
+        width: 100%
+    }
     .logo2 img {
         display: none;
     }
@@ -1994,6 +2012,9 @@ ul.tag-in li a:hover {
 }
 
 @media(max-width:765px) {
+    .img-funciona{
+        width: 100%
+    }
     .menu-top {
         width: 660px;
         padding: 1em;
@@ -2089,6 +2110,9 @@ ul.tag-in li a:hover {
 @media(max-width:768px) {}
 
 @media(max-width:991px) {
+    .img-funciona{
+        width: 100%
+    }
     .logo2 img {
         display: none;
     }
@@ -2190,12 +2214,18 @@ ul.tag-in li a:hover {
 @media (max-width: 640px) {}
 
 @media (max-width: 620px) {
+    .img-funciona{
+        width: 100%
+    }
     .header-login {
         width: 38%;
     }
 }
 
 @media(max-width:568px) {
+    .img-funciona{
+        width: 100%
+    }
     .logo2 img {
         display: none;
     }
@@ -2372,6 +2402,12 @@ ul.tag-in li a:hover {
 @media(max-width:480px) {}
 
 @media(max-width:390px) {
+    .img-funciona{
+        width: 100%
+    }
+    .funciona{
+        height: 600px;
+    }
     .logo2 img {
         display: none;
     }
