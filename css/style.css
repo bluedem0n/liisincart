@@ -574,14 +574,30 @@ label.line {
 
 
 /*-----------------------------------------------------------------------------------*/
+
+
 /*	Beneficios
 /*-----------------------------------------------------------------------------------*/
+
 .img-beneficios {
     max-width: 100%;
     margin-bottom: 1em;
 }
 
+.beneficios {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    height: 1070px;
+    position: relative;
+}
+
+
 /*-----------------------------------------------------------------------------------*/
+
+.funciona {
+    margin-bottom: 4em;
+    height: 550px;
+}
 
 
 /*	Animation effects
@@ -1318,9 +1334,11 @@ nav.nav-sidebar {
 .login {
     padding: 8em 0 0;
 }
-.register{
+
+.register {
     padding: 5em 0 0;
 }
+
 .login-bottom h2 {
     font-size: 1.4em;
     color: #000;
@@ -1828,19 +1846,21 @@ ul.tag-in li a:hover {
 
 /*--responsive--*/
 
-@media only screen and (device-aspect-ratio: 1024/768) and (orientation : portrait){
-     .item-grid,
+@media only screen and (device-aspect-ratio: 1024/768) and (orientation: portrait) {
+    .item-grid,
     .item-grid1 {
         width: 50%;
         float: left;
         padding-top: 2em;
     }
 }
+
 @media(max-width:1280px) {
     .navbar-nav > li > .mega-dropdown-menu {
         left: -130%;
     }
 }
+
 @media(max-width:1220px) {
     .logo2 img {
         display: none;
@@ -2066,8 +2086,7 @@ ul.tag-in li a:hover {
     }
 }
 
-@media(max-width:768px) {
-}
+@media(max-width:768px) {}
 
 @media(max-width:991px) {
     .logo2 img {
