@@ -342,7 +342,9 @@ a.item_add {
     width: 100% !important;
     height: 215px !important;
 }
-
+.paso{
+    float: right;
+}
 
 /*--//header--*/
 
@@ -1181,7 +1183,7 @@ span.actual {
 /* Skew Backward */
 
 .btn-contratar {
-    background-color: #FBA800;
+    background-color: #FBA800 !important;
 }
 
 .btn-contratar:hover {
