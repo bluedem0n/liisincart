@@ -120,6 +120,11 @@ p {
     color: #0070BA !important;
 }
 
+.reinventa {
+    font-family: 'Ubuntu-Bold';
+    text-transform: uppercase;
+}
+
 
 /* BOTONES */
 
@@ -154,6 +159,7 @@ p {
     background-color: #005EA6;
     width: 40%;
     border-radius: 40px;
+    text-transform: uppercase !important;
 }
 
 .mb-1 {
@@ -184,7 +190,7 @@ p {
 }
 
 ul.nav_1 li a {
-    font-size: 1em;
+    font-size: 15px;
     color: #FFF;
     padding: 1.6em;
     font-weight: 400;
@@ -263,6 +269,7 @@ div#bs-megadropdown-tabs {
     font-size: 3em;
     font-style: normal;
     font-family: 'Ubuntu-Bold';
+    margin-bottom: 1em;
 }
 
 
@@ -344,7 +351,7 @@ a.item_add {
 }
 
 .paso {
-    float: right;
+    width: 89%;
 }
 
 
@@ -384,7 +391,7 @@ a.item_add {
 
 .col-2 h2 a {
     text-decoration: none;
-    color: #000000;
+    color: #333;
 }
 
 .col-2 h2 a:hover {
@@ -459,7 +466,7 @@ a.buy-now:hover {
 
 .content-mid h3 {
     font-size: 2.5em;
-    color: #000000;
+    color: #333;
     line-height: 1.8em;
     font-family: 'Ubuntu-Regular';
     text-align: center;
@@ -803,10 +810,12 @@ h1 {
 }
 
 .btn-abrir-cuenta {
-    height: 60px;
-    line-height: 50px;
+    height: 46px;
+    line-height: 32px;
     width: 310px;
     background-color: #005EA6;
+    letter-spacing: 1px;
+    border: 3px solid #0070BA;
 }
 
 .abrir-center {
@@ -822,6 +831,7 @@ h1 {
     display: block;
     background: url(../images/back.jpg)no-repeat;
     padding: 5em 0;
+    background-position: 0;
 }
 
 .banner-top h1 {
@@ -837,7 +847,8 @@ h1 {
 }
 
 .banner-top h2 a {
-    color: #04A3DA;
+    color: white;
+    text-transform: uppercase;
 }
 
 .banner-top h2 label {
@@ -851,6 +862,10 @@ h1 {
     background: #fff;
     border-radius: 10px;
     margin: 0.5em auto;
+}
+
+.navbar-nav > li > a {
+    line-height: 26px !important;
 }
 
 
@@ -1193,7 +1208,14 @@ span.actual {
 }
 
 .btn-agregar {
-    background-color: #04A3DA;
+    border: 2px solid #04A3DA;
+    background-color: white !important;
+    color: gray !important;
+}
+
+.btn-agregar:hover {
+    background-color: #04A3DA !important;
+    color: white !important;
 }
 
 .hvr-skew-backward {
@@ -1295,7 +1317,7 @@ ul.product-qty {
 }
 
 .tabs li a {
-    padding: 1em;
+    font-size: 15px;
     font-size: 0.9em;
     color: #B3B3B3;
     border-bottom: 1px solid #EDEDED;
@@ -1479,7 +1501,6 @@ nav.nav-sidebar {
     font-size: 1.5em;
     color: #000000;
     font-family: 'Ubuntu-Regular';
-    text-align: left;
 }
 
 .login-right p {
@@ -2831,13 +2852,16 @@ ul.tag-in li a:hover {
     margin: 0 auto;
     margin-bottom: 1em;
     margin-top: 1em;
+    margin-left: 18%;
+    width: 100%;
 }
 
 .social-box a {
-    font-weight: bold;
-    font-size: 18px;
+    font-size: 12px;
     padding: 8px;
     margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 .social-box a i {

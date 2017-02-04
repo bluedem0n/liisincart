@@ -25,15 +25,19 @@ body {
 	text-align: center;
 }
 
-.lijntje {
+.linea {
 	background-color: #f7f7f7;
 	width: 230px;
 	height: 3px;
-	margin: 3vh auto 7vh;
+	margin: 3vh auto 2vh;
+}
+
+.volver {
+	margin-bottom: 2em !important;
 }
 
 @media screen and (max-width:800px) {
-	.lijntje {
+	.linea {
 		width: 200px;
 		height: 1px;
 		margin: 3vh auto 5vh;
@@ -41,12 +45,13 @@ body {
 }
 
 .flex-container h1 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #f7f7f7;
-    font-family: 'Ubuntu-Bold';
-    width: 65%;
-    margin: 0 auto;
+	font-size: 24px;
+	text-transform: uppercase;
+	color: #f7f7f7;
+	font-family: 'Ubuntu-Bold';
+	width: 65%;
+	margin: 0 auto;
+	margin-top: 1em;
 }
 
 @media screen and (max-width:480px) {
